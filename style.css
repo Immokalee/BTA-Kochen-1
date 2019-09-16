@@ -5,15 +5,16 @@
 
 
 body {
-  background-color: rgb(135, 11, 3);
+  background-color: white;
 margin: 0;
 font-family: Helvetica, Arial, sans-serif;
 }
 
-a {color: black;
+nav a {color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  transition: all 0.35s linear;
 
 }
 
@@ -42,5 +43,77 @@ padding: 0;
 #burger{
   background: transparent;
   border: none;
+}
+
+#hero{
+background-image: url(img/intro.jpg);
+height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
+
+
+#hero p{
+  color: white;
+}
+
+#hero h1{
+  color: white;
+}
+
+.button{
+  color: #374a67;
+  background: white;
+  border: 2px #374a67 solid;
+  text-decoration: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: 1s linear;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.button:hover{
+  color: white;
+  background: #374a67;
+
+}
+
+@media (min-width: 960px) {
+  #main-navigation{
+    display: block;
+  }
+  #burger{
+    display: none;
+  }
+}
+
+#main-navigation ul{
+  display: flex;
+}
+
+nav li{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+nav li:last-child{
+  margin-right: 0;
+}
+
+nav a:hover{
+  color: #39b33f;
+  background: #f07aec;
+}
+
 
 }
